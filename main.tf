@@ -22,3 +22,8 @@ resource "google_compute_instance" "dareit-vm-ci" {
     }
   }
 }
+
+resource "google_storage_bucket" "static-site" {
+  name          = "aga-new-bucket-dev-dev-dev"
+  location      = "US"
+}
